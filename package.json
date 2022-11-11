@@ -1,6 +1,6 @@
 {
   "name": "@aerapass/sequelize-decorators",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sequelize + Decorators = ❤",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
