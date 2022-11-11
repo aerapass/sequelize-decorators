@@ -1,10 +1,10 @@
-import {Model, InitOptions, ModelAttributes, DataTypes, ModelAttributeColumnOptions} from 'sequelize';
+import { ModelStatic, Model, InitOptions, ModelAttributes, DataTypes, ModelAttributeColumnOptions } from 'sequelize';
 import 'reflect-metadata';
 
 const S_ATTRIBUTES = Symbol('attributes');
 
 export function Options(options: InitOptions) {
-    return function(model: typeof Model): void {
+    return function(model: ModelStatic<any>): void {
         const attributes: ModelAttributes = Reflect.getMetadata(S_ATTRIBUTES, model) || {};
         model.init(attributes, options);
     };
