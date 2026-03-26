@@ -10,3 +10,5 @@ tslint.json
 .eslintrc.json
 .babelrc
 .editorconfig
+dist/test
+renovate.json
